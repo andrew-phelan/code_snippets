@@ -1,0 +1,16 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<ul class="nav">
+				<li class="vertical-space"></li>
+				<li class="active"><img width="24" height="24" style="margin-top:0.5em" alt="Keelvar Systems" src="/static/images/keelvar_icon_small.png" /></li>
+				<li><a href='#'>Home</a></li>
+				<li><a href='#'>Contents</a></li>
+				<li><a href='#'>Glossary</a></li>
+				<li><a href='#'>About</a></li>
+			</ul>
+			<form class="navbar-form pull-left"><input type="text" id="search" size="10" value="" />
+			<button type="submit" class="btn" id="search_button">Submit</button></form>
+		</div>
+	</div>
+</div>
