@@ -3,7 +3,7 @@
 		<div class="container">
 			<ul class="nav">
 				<li class="vertical-space"></li>
-				<li class="active"><img width="24" height="24" style="margin-top:0.5em" alt="Keelvar Systems" src="/static/images/keelvar_icon_small.png" /></li>
+				<li class="active"><img width="24" height="24" style="margin-top:0.5em" alt="" /></li>
 				<li><a href='#'>Home</a></li>
 				<li><a href='#'>Contents</a></li>
 				<li><a href='#'>Glossary</a></li>
