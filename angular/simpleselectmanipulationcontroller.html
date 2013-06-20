@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title></title>
+      <style>
+        div {
+          border: 1px solidblack;
+          padding: 10px;
+          margin-bottom: 10px;
+          margin-left: 5px;
+        }
+      </style>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"> </script>
+      <script src="controllerexample.js"></script>
+  </head>
+  <body ng-controller="myController">
+      <select ng-model="selectedHelp">
+        <option value="Help1">1</option>
+        <option value="Help2">2</option>
+        <option value="Help3">3</option>
+      </select>
+      <p style="display: inline;" class="text-info"> {{ selectedHelp + '  =' +topic[selectedHelp] }} <p>
+  </body>
+</html>
