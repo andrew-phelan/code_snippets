@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="table">
+  <head>
+    <title>Table</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="MainCtrl">
+    <div  ng-model="list">
+      <table class="table table-bordered" id="demandTable">
+        <tr ng-repeat=" l in list">
+          <td>{{ l.Label }}</td>
+          <td>{{ l.Source }}</td>
+          <td>{{ l.Type }}</td>
+        </tr>
+      </table>
+    </div>
+    <button ng-click="addDemand()"></button>
+    <div id="dialog">
+
+  <form class="form-horizontal" data-ng-submit="submitList()">
+      <input type="text" required data-ng-model="list.Label"/>
+        <br />
+      <input type="radio" data-ng-model="list.Source" ng-value="Purchaser"> Purchaser <br />
+        <br />
+      <input type="radio" data-ng-model="list.Source" value="Bidder"> Bidder <br />
+        <br />
+      <input type="text" required data-ng-model="list.Type"/>
+        <br />
+        <br />
+        <br />
+      <input type="submit" class="btn btn-primary" value="Add" />
+  </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title></title>
+    <script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+    <script src="newcontroller.js"></script>
+  </head>
+  <body>
+    <div ng-controller="newController">
+                <select ng-model="selectedCustomer" ng-options="customer.name for customer in customerDetails "></select>
+                <p ng-click="fullDetails()"> Value should be here: {{ selectedCustomer.income }} {{ selectedCustomer.location}}</p>
+    </div>
+    <div ng-controller="newController">
+      Search: <input ng-model="searchText">
+      <ul>
+        <li ng-repeat="customer in customerDetails | filter:searchText">
+        Customer Name {{ customer.name}}
+        </li>
+      </ul>
+      <input type="text" ng-model="selectedCustomer">Enter Your name:</input>
+    </div>
+  </body>
+</html>

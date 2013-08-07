@@ -1,0 +1,13 @@
+<!doctype html>
+<html ng-app>
+        <head>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+                <script src="controllerexample.js"></script>
+        </head>
+        <body>
+            <div ng-controller="myController">
+                <select ng-model="selectedCompany" ng-options="stock as stock.name for stock in stockPrice "></select>
+                <p ng-click="alertPrice()"> Value should be here: {{ selectedCompany.value }}</p>
+            </div>
+        </body>
+</html>
