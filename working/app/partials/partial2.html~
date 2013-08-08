@@ -1,0 +1,10 @@
+<p>This is the partial for view 2.</p>
+<p>
+  Showing of Tests:
+  <ul>
+    <li ng-repeat="t in test">{{ t.Test }}</li>
+  </ul>
+
+Search: <input ng-model="search">
+  {{ test.Test | filter:search }}
+</p>
